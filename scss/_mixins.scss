@@ -10,9 +10,11 @@
   -o-background-size: cover;
   background-size: cover;
 }
-@mixin serif-font() {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+
+@mixin playfair-display-font() {
+  font-family: 'Playfair Display', serif;
 }
-@mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+@mixin lato-font() {
+  font-family: 'Lato', sans-serif;
 }

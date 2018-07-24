@@ -6,7 +6,8 @@ html {
 }
 
 body {
-  @include serif-font;
+  @include lato-font;
+  font-weight: bold;
 }
 
 hr {
@@ -33,7 +34,8 @@ h3,
 h4,
 h5,
 h6 {
-  @include sans-serif-font;
+  @include playfair-display-font;
+  font-weight: bold;
 }
 
 .bg-primary {
