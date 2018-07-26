@@ -1,37 +1,114 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header-bg.png');
-  background-position: center center;
-  @include background-cover;
+  // padding-top: 10rem;
+  // padding-bottom: calc(10rem - 56px);
+  // background-image: url('../img/header-bg.png');
+  // background-position: 30% center;
+  text-align: right;
+  position: relative;
+  //@include background-cover;
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: $black;
+    margin-bottom: 4rem;
+    .masthead-heading-dash {
+      display: inline-block;
+      height: 3px;
+      width: 2.5rem;
+      background-color: $primary;
+      margin: 8px 0;
+    }
   }
-  p {
-    font-weight: 300;
+  .carousel-item {
+    min-height: 300px;
+    height: 80vh;
+    background: no-repeat 30% center scroll;
+    @include background-cover;
+    .carousel-caption {
+      bottom: 20%;
+      right: 5%;
+      left: 5%;
+      text-align: right;
+    }
+  }
+
+  .masthead-container {
+    margin: auto;
+  }
+  .masthead-content {
+    display: none;
+    color: $color-3;
+    font-weight: bold;
+  }
+  .masthead-white-filter {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  @media (min-width: 576px) {
+    .masthead-content {
+      display: block;
+    }
   }
   @media (min-width: 768px) {
-    p {
-      font-size: 1.15rem;
+    .masthead-content {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      line-height: 25px;
+      padding-left: 2.4rem;
     }
   }
   @media (min-width: 992px) {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-position: center center;
+      .carousel-caption {
+        right: 10%;
+      }
+    }
     h1 {
       font-size: 3rem;
+      line-height: 72px;
+      .masthead-heading-dash {
+        height: 3px;
+        width: 4rem;
+        margin: 15px 0;
+      }
+    }
+    .masthead-container {
+      padding-top: 10rem;
+    }
+    .masthead-white-filter {
+      background: rgba(255, 255, 255, 0.2);
     }
   }
   @media (min-width: 1200px) {
     h1 {
       font-size: 4rem;
+      .masthead-heading-dash {
+        height: 4px;
+        width: 5rem;
+      }
+    }
+  }
+  @media (min-width: 1500px) {
+    .masthead-content {
+      padding-left: 15rem;
     }
   }
 }
