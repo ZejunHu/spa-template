@@ -12,8 +12,12 @@ body {
 
 hr {
   max-width: 50px;
-  border-width: 3px;
+  border-width: 4px;
   border-color: $primary;
+  @media (min-width: 992px) {
+    max-width: 90px;
+    margin: 25px auto;
+  }
 }
 
 hr.light {
@@ -55,7 +59,26 @@ section {
 }
 
 .section-heading {
-  margin-top: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 3rem;
+    line-height: 68px;
+  }
+}
+
+.section-intro {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: $color-3;
+  max-width: 480px;
 }
 
 ::-moz-selection {

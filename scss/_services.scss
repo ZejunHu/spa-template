@@ -1,4 +1,120 @@
 // Styling for the services section
-.service-box {
-  max-width: 400px;
+#services {
+  background-color: #F8F8F8;
+  .services-heading {
+    padding-bottom: 2rem;
+  }
+  .services-block {
+    text-align: center;
+    padding: 2rem;
+    .services-block-img {
+      width: 90px;
+      height: 90px;
+      background-color: #E7E7E7;
+      border-radius: 90px;
+      margin: 1rem auto;
+    }
+    .services-block-text {
+      letter-spacing: 1px;
+      .services-block-text-heading {
+        font-size: 30px;
+        margin: 2rem auto;
+      }
+      .services-block-text-info {
+        font-size: 14px;
+        line-height: 25px;
+        color: $color-3;
+      }
+    }
+  }
+  .services-img-box {
+    margin: auto;
+  }
+
+  @media (min-width: 576px) {
+    .services-block {
+      padding: 0 1rem;
+      .services-block-img {
+        margin: 0.5rem auto;
+        width: 60px;
+        height: 60px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .services-block-text {
+        letter-spacing: 0;
+        .services-block-text-heading {
+          font-size: 20px;
+          margin: 0.5rem auto;
+        }
+        .services-block-text-info {
+          margin-bottom: 0.5rem;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .services-block {
+      padding: 1rem;
+      .services-block-img {
+        margin: 0.8rem auto;
+      }
+      .services-block-text {
+        .services-block-text-heading {
+          font-size: 25px;
+        }
+        .services-block-text-info {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .services-block {
+      .services-block-text {
+        .services-block-text-info {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .services-block {
+      .services-block-img {
+        width: 80px;
+        height: 80px;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .services-block-text {
+        letter-spacing: 1px;
+        .services-block-text-info {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .services-block {
+      padding: 2rem;
+      .services-block-img {
+        margin: 0.5rem auto;
+      }
+      .services-block-text {
+        .services-block-text-heading {
+          font-size: 30px;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
 }
