@@ -1,10 +1,10 @@
 #pricing {
+  position: relative;
   background-image: url("../img/price-bg.png");
   @include background-cover;
   background-position: center center;
   background-repeat: no-repeat;
   .pricing-container {
-    position: relative;
     .pricing-list {
       margin: 2rem auto;
       .pricing-list-item {
@@ -73,11 +73,12 @@
   }
 
   .vert {
+    position: inherit;
     .carousel-indicators {
       top: 50%;
       bottom: inherit;
       left: inherit;
-      right: -1rem;
+      right: 0;
       margin: auto;
       transform: translateY(-50%);
       display: block;
@@ -94,7 +95,7 @@
         background-color: $primary;
       }
       @media (min-width: 576px) {
-        right: -2rem;
+        right: 1rem;
       }
     }
 

@@ -789,6 +789,7 @@ header.masthead .masthead-white-filter {
 }
 
 #pricing {
+  position: relative;
   background-image: url("../img/price-bg.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -796,10 +797,6 @@ header.masthead .masthead-white-filter {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-#pricing .pricing-container {
-  position: relative;
 }
 
 #pricing .pricing-container .pricing-list {
@@ -871,11 +868,15 @@ header.masthead .masthead-white-filter {
   }
 }
 
+#pricing .vert {
+  position: inherit;
+}
+
 #pricing .vert .carousel-indicators {
   top: 50%;
   bottom: inherit;
   left: inherit;
-  right: -1rem;
+  right: 0;
   margin: auto;
   transform: translateY(-50%);
   display: block;
@@ -898,7 +899,7 @@ header.masthead .masthead-white-filter {
 
 @media (min-width: 576px) {
   #pricing .vert .carousel-indicators {
-    right: -2rem;
+    right: 1rem;
   }
 }
 
