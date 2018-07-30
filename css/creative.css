@@ -885,6 +885,15 @@ header.masthead .masthead-white-filter {
   display: block;
   margin: 1rem;
   border: 2px solid #9B9B9B;
+  background-color: transparent;
+}
+
+#pricing .vert .carousel-indicators li:hover {
+  background-color: #C8A4A8;
+}
+
+#pricing .vert .carousel-indicators .active {
+  background-color: #C8A4A8;
 }
 
 @media (min-width: 576px) {

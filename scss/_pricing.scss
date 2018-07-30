@@ -85,6 +85,13 @@
         display: block;
         margin: 1rem;
         border: 2px solid $color-4;
+        background-color: transparent;
+        &:hover {
+          background-color: $primary;
+        }
+      }
+      .active {
+        background-color: $primary;
       }
       @media (min-width: 576px) {
         right: -2rem;
