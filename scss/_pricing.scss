@@ -3,69 +3,91 @@
   @include background-cover;
   background-position: center center;
   background-repeat: no-repeat;
+  .pricing-container {
+    position: relative;
+    .pricing-list {
+      margin: 2rem auto;
+      .pricing-list-item {
+        padding: 0 0 1rem;
+        margin: 2rem 0;
+        border-bottom: 1px solid $color-4;
+        .pricing-list-item-name {
+          font-size: 24px;
+          letter-spacing: 1px;
+          margin: auto;
+        }
+        .pricing-list-item-tag {
+          margin-top: 0.8rem;
+          width: 100px;
+          height: 35px;
+          font-size: 12px;
+          letter-spacing: 1px;
+          background-color: $primary;
+          color: $white;
+          text-transform: uppercase;
+          border-radius: 300px;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          padding: .375rem .75rem;
+          line-height: 2;
+        }
+        .pricing-list-item-price {
+          text-align: right;
+          font-size: 24px;
+          color: $primary;
+        }
+        .pricing-list-item-description {
+          font-size: 14px;
+          letter-spacing: 1px;
+          line-height: 25px;
+          color: $color-3;
+        }
+      }
 
-  .pricing-list {
-    margin: 2rem auto;
-    .pricing-list-item {
-      padding: 0 0 1rem;
-      margin: 2rem 0;
-      border-bottom: 1px solid $color-4;
-      .pricing-list-item-name {
-        font-size: 24px;
-        letter-spacing: 1px;
+      @media (min-width: 768px) {
         margin: auto;
       }
-      .pricing-list-item-tag {
-        margin-top: 0.8rem;
-        width: 100px;
-        height: 35px;
-        font-size: 12px;
-        letter-spacing: 1px;
-        background-color: $primary;
-        color: $white;
-        text-transform: uppercase;
-        border-radius: 300px;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        padding: .375rem .75rem;
-        line-height: 2;
+
+      @media (min-width: 992px) {
+        .pricing-list-item {
+          .pricing-list-item-name {
+            display: inline-block;
+            line-height: 35px;
+          }
+          .pricing-list-item-tag {
+            margin: -0.5rem 0 0 0.5rem;
+            display: inline-block;
+          }
+        }
       }
-      .pricing-list-item-price {
-        text-align: right;
-        font-size: 24px;
-        color: $primary;
-      }
-      .pricing-list-item-description {
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        color: $color-3;
+
+      @media (min-width: 1200px) {
+        .pricing-list-item {
+          .pricing-list-item-tag {
+            margin: -0.5rem 0 0 1rem;
+          }
+        }
       }
     }
+  }
 
-    @media (min-width: 768px) {
+  .vert {
+    .carousel-indicators {
+      top: 50%;
+      bottom: inherit;
+      left: inherit;
+      right: -1rem;
       margin: auto;
-    }
-
-    @media (min-width: 992px) {
-      .pricing-list-item {
-        .pricing-list-item-name {
-          display: inline-block;
-          line-height: 35px;
-        }
-        .pricing-list-item-tag {
-          margin: -0.5rem 0 0 0.5rem;
-          display: inline-block;
-        }
+      transform: translateY(-50%);
+      display: block;
+      li {
+        display: block;
+        margin: 1rem;
+        border: 2px solid $color-4;
       }
-    }
-
-    @media (min-width: 1200px) {
-      .pricing-list-item {
-        .pricing-list-item-tag {
-          margin: -0.5rem 0 0 1rem;
-        }
+      @media (min-width: 576px) {
+        right: -2rem;
       }
     }
 
